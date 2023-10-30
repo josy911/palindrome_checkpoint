@@ -1,0 +1,42 @@
+ALGORITHM algorithm_name
+VAR
+    word: STRING = "kayak"
+     reversedword: STRING
+BEGIN
+   reversedword =reverse_string(word)
+
+// check if word contains a single character of an empty space
+
+IF (word.length = < 2 OR word = "") THEN
+write(word + "" + "pallidrome")
+END_IF
+
+//    compare every character in eachword against the other
+   IF (word[word.length -1] = reversedword[reversedword.length -1]) THEN
+   THEN
+
+// compare reversed string against each othere to check if the word is a pallidrome
+IF (word = erversedword) THEN
+write(word + "" + is a "pallidrome")
+END_IF
+
+ELSE
+write(word + "" + is a "pallidrome")
+   
+END_IF
+END
+
+// A function to reverse a string
+FUNCTION reverse_string(word) : STRING
+VAR
+    testString: STRING = 
+BEGIN
+// we will decerement from word.length -1 until is less thanor equal to zero
+
+FOR i FROM word.length -1 TO 0 STEP i -  DO
+testString = testString + word [1]
+
+    
+END_FOR
+    RETURN testString;
+END
